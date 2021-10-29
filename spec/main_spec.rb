@@ -10,4 +10,8 @@ describe Fibonacci do
     it ' has a class called fibonacci' do
         expect(fibonacci).to be_instance_of(Fibonacci)
     end
+
+    it 'takes an array as an argument and returns third-to-last and second-to-last numbers'do 
+       new_arr
+    end
 end
