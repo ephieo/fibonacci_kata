@@ -1,19 +1,10 @@
-class Puzzle 
+require_relative './helper'
+require_relative './fibonacci'
 
-    def fibonacci(num)
-        start_arr = [0,1]
-        while start_arr.size < num
-            sum = start_arr[start_arr.size - 1] + start_arr[start_arr.size - 2]
-            start_arr.push(sum)
-        end
-        
-        puts start_arr
-        return start_arr
 
-    end
+helper = Helper.new
+fibonacci = Fibonacci.new(helper)
 
-end 
 
-puzzle = Puzzle.new
 
-puzzle.fibonacci(3)
+fibonacci.run(12)
