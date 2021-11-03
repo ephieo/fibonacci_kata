@@ -1,10 +1,8 @@
-require_relative './helper'
 require_relative './fibonacci'
 
 
-helper = Helper.new
-fibonacci = Fibonacci.new(helper)
+fibonacci = Fibonacci.new
+puts "Enter a number below : \n"
+num = gets.chomp.to_i
 
-
-
-fibonacci.run(12)
+puts "Result = #{fibonacci.fib(num)}"

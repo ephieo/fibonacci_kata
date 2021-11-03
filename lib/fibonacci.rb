@@ -1,20 +1,11 @@
 
 class Fibonacci
-    attr_reader :helper
-    def initialize(helper)
-        @helper = helper
-    end
-
-    def run(num)
-        start_arr = [0,1]
-        while start_arr.size < num
-            sum = helper.sum_last_two(start_arr)
-            start_arr.push(sum)
-        end
-        
-        
-        puts start_arr
-        return start_arr
-        
+    def fib(num)
+      if num < 2 
+        return num
+      else  
+        puts "\n #{fib(num-1) + fib(num-2)}\n"
+        return fib(num-1) + fib(num-2)
+      end    
     end
 end
