@@ -1,7 +1,7 @@
 
 class Fibonacci
     def fib(num)
-      if num < 2 
+      if num <= 1 
         return num
       else  
         puts "\n #{fib(num-1) + fib(num-2)}\n"
